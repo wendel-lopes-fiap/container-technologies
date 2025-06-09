@@ -2,7 +2,7 @@
     "containerDefinitions": [
         {
             "name": "container-technologies",
-            "image": "gersontpc/lab-ci-cd:v1.0.0",
+            "image": "pedromotas/container-technologies:v1.0.0-b1e4f5c",
             "cpu": 0,
             "portMappings": [
                 {
@@ -22,7 +22,7 @@
             "logConfiguration": {
                 "logDriver": "awslogs",
                 "options": {
-                    "awslogs-group": "/ecs/lab-ci-cd",
+                    "awslogs-group": "/ecs/ci-cd-app",
                     "mode": "non-blocking",
                     "awslogs-create-group": "true",
                     "max-buffer-size": "25m",
@@ -41,7 +41,7 @@
             }
         }
     ],
-    "family": "lab-ci-cd",
+    "family": "ci-cd-app",
     "taskRoleArn": "arn:aws:iam::190367862709:role/LabRole",
     "executionRoleArn": "arn:aws:iam::190367862709:role/LabRole",
     "networkMode": "awsvpc",
@@ -59,7 +59,7 @@
     "tags": [
         {
             "key": "Name",
-            "value": "lab-ci-cd"
+            "value": "ci-cd-app"
         }
     ]
 }
