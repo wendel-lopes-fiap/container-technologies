@@ -2,7 +2,7 @@
     "containerDefinitions": [
         {
             "name": "container-technologies",
-            "image": "gersontpc/ci-cd-app:v1.0.0",
+            "image": "pedromotas/container-technologies:v1.0.0-b1e4f5c",
             "cpu": 0,
             "portMappings": [
                 {
